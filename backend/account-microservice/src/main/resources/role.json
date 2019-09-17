@@ -1,0 +1,69 @@
+{
+  "roles": [{
+    "roleName": "Administrator",
+    "displayName": "系统管理员",
+    "level": 1,
+    "buildIn": true,
+    "permissions": [{
+      "schemaName": "*",
+      "actions": ["Read", "Create", "Update", "Delete"]
+    }]
+  }, {
+    "roleName": "Manager",
+    "displayName": "业务管理员",
+    "level": 2,
+    "buildIn": true,
+    "permissions": [{
+      "schemaName": "User",
+      "actions": ["Read", "Create", "Update", "Delete"]
+    }, {
+      "schemaName": "Organization",
+      "actions": ["Read", "Create", "Update", "Delete"]
+    }, {
+      "schemaName": "Soldier",
+      "actions": ["Read", "Create", "Update", "Delete"]
+    }, {
+      "schemaName": "Trainer",
+      "actions": ["Read", "Create", "Update", "Delete"]
+    }, {
+      "schemaName": "TrainPlace",
+      "actions": ["Read", "Create", "Update", "Delete"]
+    }, {
+      "schemaName": "*",
+      "actions": ["Read"]
+    }]
+  }, {
+    "roleName": "Operator",
+    "displayName": "操作员",
+    "level": 5,
+    "buildIn": true,
+    "permissions": [{
+      "schemaName": "User",
+      "actions": ["Read", "Create", "Update"]
+    }, {
+      "schemaName": "Organization",
+      "actions": ["Read", "Create", "Update"]
+    }, {
+      "schemaName": "Soldier",
+      "actions": ["Read", "Create", "Update", "Delete"]
+    }, {
+      "schemaName": "Trainer",
+      "actions": ["Read", "Create", "Update", "Delete"]
+    }, {
+      "schemaName": "TrainPlace",
+      "actions": ["Read", "Create", "Update", "Delete"]
+    }, {
+      "schemaName": "*",
+      "actions": ["Read"]
+    }]
+  }, {
+    "roleName": "Reader",
+    "displayName": "只读用户",
+    "level": 10,
+    "buildIn": true,
+    "permissions": [{
+      "schemaName": "*",
+      "actions": ["Read"]
+    }]
+  }]
+}

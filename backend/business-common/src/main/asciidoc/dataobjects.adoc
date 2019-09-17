@@ -1,0 +1,1321 @@
+= Cheatsheets
+
+[[AdvancedPersonInfo]]
+== AdvancedPersonInfo
+
+++++
+ AdvancedPersonInfo data object
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[bloodType]]`@bloodType`|`String`|-
+|[[currentCity]]`@currentCity`|`String`|-
+|[[fromCity]]`@fromCity`|`String`|-
+|[[graduatedAt]]`@graduatedAt`|`String`|-
+|[[graduatedMajor]]`@graduatedMajor`|`String`|-
+|[[graduatedSchool]]`@graduatedSchool`|`String`|-
+|[[highestDegree]]`@highestDegree`|`String`|-
+|[[nationality]]`@nationality`|`String`|-
+|[[phoneNum]]`@phoneNum`|`String`|-
+|===
+
+[[BulletRequirement]]
+== BulletRequirement
+
+++++
+ 八落实弹药消耗要求
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[majorType]]`@majorType`|`String`|-
+|[[numType]]`@numType`|`String`|-
+|[[ordnanceType]]`@ordnanceType`|`String`|-
+|[[orgCategory]]`@orgCategory`|`String`|-
+|[[quota]]`@quota`|`Number (int)`|-
+|[[rankL1]]`@rankL1`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[unitType]]`@unitType`|`String`|-
+|===
+
+[[ChildRule]]
+== ChildRule
+
+++++
+ 全局课目规则中的子项
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[dayType]]`@dayType`|`String`|-
+|[[fromHour]]`@fromHour`|`Number (int)`|-
+|[[holidays]]`@holidays`|`Array of Number (Integer)`|-
+|[[hours]]`@hours`|`Number (int)`|-
+|[[months]]`@months`|`Array of Number (Integer)`|-
+|[[priority]]`@priority`|`Number (int)`|-
+|[[section]]`@section`|`String`|-
+|[[weekSeqs]]`@weekSeqs`|`Array of Number (Integer)`|-
+|[[weekdays]]`@weekdays`|`Array of Number (Integer)`|-
+|===
+
+[[CompetitionRule]]
+== CompetitionRule
+
+++++
+ 会操课目规则
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[courseId]]`@courseId`|`String`|-
+|[[hours]]`@hours`|`Number (int)`|-
+|[[hoursEnabled]]`@hoursEnabled`|`Boolean`|-
+|[[id]]`@id`|`String`|-
+|[[orgCategories]]`@orgCategories`|`Array of String`|-
+|[[sectionId]]`@sectionId`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[times]]`@times`|`Number (int)`|-
+|===
+
+[[Condition]]
+== Condition
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[ageFrom]]`@ageFrom`|`Number (int)`|-
+|[[ageTo]]`@ageTo`|`Number (int)`|-
+|[[count]]`@count`|`Number (Double)`|-
+|[[score]]`@score`|`Number (Double)`|-
+|===
+
+[[Condition]]
+== Condition
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[courseNum]]`@courseNum`|`Number (int)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[scoreReq]]`@scoreReq`|`Number (int)`|-
+|[[tacticsScore]]`@tacticsScore`|`Number (int)`|-
+|===
+
+[[Condition]]
+== Condition
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[matchRate]]`@matchRate`|`Number (Double)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[scoreReq]]`@scoreReq`|`Number (int)`|-
+|===
+
+[[Course]]
+== Course
+
+++++
+ 训练课目定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[ascending]]`@ascending`|`Boolean`|-
+|[[countType]]`@countType`|`String`|-
+|[[courseCategory]]`@courseCategory`|`Number (int)`|-
+|[[gunnerType]]`@gunnerType`|`String`|-
+|[[id]]`@id`|`String`|-
+|[[majorReqs]]`@majorReqs`|`Array of String`|-
+|[[manual]]`@manual`|`Boolean`|-
+|[[name]]`@name`|`String`|-
+|[[ordnanceTypes]]`@ordnanceTypes`|`Array of String`|-
+|[[orgCategories]]`@orgCategories`|`Array of String`|-
+|[[orgType]]`@orgType`|`String`|-
+|[[personProperties]]`@personProperties`|`Array of String`|-
+|[[placeTypes]]`@placeTypes`|`Array of String`|-
+|[[rankReqs]]`@rankReqs`|`Array of String`|-
+|[[require]]`@require`|`String`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[sectionId]]`@sectionId`|`String`|-
+|[[seq]]`@seq`|`Number (int)`|-
+|[[serviceReqs]]`@serviceReqs`|`Array of String`|-
+|[[sportCategory]]`@sportCategory`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[subcourses]]`@subcourses`|`Array of link:dataobjects.html#SubCourseL1[SubCourseL1]`|-
+|[[tasks]]`@tasks`|`Array of String`|-
+|[[testContents]]`@testContents`|`Array of link:dataobjects.html#TestContent[TestContent]`|-
+|[[textCondition]]`@textCondition`|`String`|-
+|[[textEvaluation]]`@textEvaluation`|`String`|-
+|[[textStandard]]`@textStandard`|`String`|-
+|[[trainStepName]]`@trainStepName`|`String`|-
+|[[trainUnits]]`@trainUnits`|`Array of Number (Integer)`|-
+|[[unitType]]`@unitType`|`String`|-
+|===
+
+[[CourseDistribution]]
+== CourseDistribution
+
+++++
+ 课目配当表定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[courseId]]`@courseId`|`String`|-
+|[[id]]`@id`|`String`|-
+|[[orgCategories]]`@orgCategories`|`Array of String`|-
+|[[personProperties]]`@personProperties`|`Array of String`|-
+|[[sectionId]]`@sectionId`|`String`|-
+|[[serviceReq]]`@serviceReq`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[subjects]]`@subjects`|`Array of String`|-
+|[[task]]`@task`|`String`|-
+|===
+
+[[CourseRule]]
+== CourseRule
+
+++++
+ 全局课目规则(针对非军事课目)
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[childRules]]`@childRules`|`Array of link:dataobjects.html#ChildRule[ChildRule]`|-
+|[[courseId]]`@courseId`|`String`|-
+|[[forbiddenWeathers]]`@forbiddenWeathers`|`Array of String`|-
+|[[id]]`@id`|`String`|-
+|[[orgCategories]]`@orgCategories`|`Array of String`|-
+|[[preRuleId]]`@preRuleId`|`String`|-
+|[[rateEnabled]]`@rateEnabled`|`Boolean`|-
+|[[rateUnit]]`@rateUnit`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[times]]`@times`|`Number (int)`|-
+|[[totalEnabled]]`@totalEnabled`|`Boolean`|-
+|[[totalTimes]]`@totalTimes`|`Number (int)`|-
+|===
+
+[[CourseTime]]
+== CourseTime
+
+++++
+ 课目时间参考表定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[courseIds]]`@courseIds`|`Array of String`|-
+|[[hoursAtNight]]`@hoursAtNight`|`Number (int)`|-
+|[[hoursInDay]]`@hoursInDay`|`Number (int)`|-
+|[[id]]`@id`|`String`|-
+|[[major]]`@major`|`String`|-
+|[[orgCategories]]`@orgCategories`|`Array of String`|-
+|[[personProperties]]`@personProperties`|`Array of String`|-
+|[[sectionId]]`@sectionId`|`String`|-
+|[[serviceReqs]]`@serviceReqs`|`Array of String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[tasks]]`@tasks`|`Array of String`|-
+|===
+
+[[DailySchedule]]
+== DailySchedule
+
+++++
+ 每日作息时间
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[afternoon]]`@afternoon`|`Number (Double)`|-
+|[[id]]`@id`|`String`|-
+|[[morning]]`@morning`|`Number (Double)`|-
+|[[night]]`@night`|`Number (Double)`|-
+|[[orgCategory]]`@orgCategory`|`String`|-
+|[[sport]]`@sport`|`Number (Double)`|-
+|===
+
+[[GroupTrainMethod]]
+== GroupTrainMethod
+
+++++
+ 首长机关组训方法
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|===
+
+[[GunnerType]]
+== GunnerType
+
+++++
+ 枪手类型
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[gunTypes]]`@gunTypes`|`Array of String`|-
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|===
+
+[[LeaderOfficeAnnualScoreRule]]
+== LeaderOfficeAnnualScoreRule
+
+++++
+ 首长机关年度训练成绩评定标准
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[conditions]]`@conditions`|`Array of link:dataobjects.html#Condition[Condition]`|-
+|[[id]]`@id`|`String`|-
+|[[score]]`@score`|`Number (int)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[withTactics]]`@withTactics`|`Boolean`|-
+|===
+
+[[MilitaryRank]]
+== MilitaryRank
+
+++++
+ 武警部队军衔等级定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|[[rankLevel1]]`@rankLevel1`|`String`|-
+|[[rankLevel2]]`@rankLevel2`|`String`|-
+|===
+
+[[MotorRequirement]]
+== MotorRequirement
+
+++++
+ 摩托飞行小时消耗要求
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[motorType]]`@motorType`|`String`|-
+|[[orgCategory]]`@orgCategory`|`String`|-
+|[[quota]]`@quota`|`Number (int)`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[unitType]]`@unitType`|`String`|-
+|===
+
+[[MotorType]]
+== MotorType
+
+++++
+ 摩托类型
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|[[unit]]`@unit`|`String`|-
+|===
+
+[[MultipleTargetScoreRule]]
+== MultipleTargetScoreRule
+
+++++
+ 多对象综合训练成绩评定标准
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[conditions]]`@conditions`|`Array of link:dataobjects.html#Condition[Condition]`|-
+|[[id]]`@id`|`String`|-
+|[[score]]`@score`|`Number (int)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[OptionalSportCourse]]
+== OptionalSportCourse
+
+++++
+ 体育专项训练课目组
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[courseIds]]`@courseIds`|`Array of String`|-
+|[[gender]]`@gender`|`String`|-
+|[[groupId]]`@groupId`|`Number (int)`|-
+|[[id]]`@id`|`String`|-
+|[[itemSeq]]`@itemSeq`|`Number (int)`|-
+|[[physicalLevel]]`@physicalLevel`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[troopCategory]]`@troopCategory`|`String`|-
+|===
+
+[[OrdnanceType]]
+== OrdnanceType
+
+++++
+ 军械类型定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[bulletUnit]]`@bulletUnit`|`String`|-
+|[[category]]`@category`|`String`|-
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|[[weaponUnit]]`@weaponUnit`|`String`|-
+|===
+
+[[OrgCategory]]
+== OrgCategory
+
+++++
+ 武警部队单位分类，比如内卫总队执勤分队等
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[optionalMajors]]`@optionalMajors`|`Array of String`|-
+|[[optionalServices]]`@optionalServices`|`Array of String`|-
+|[[optionalTasks]]`@optionalTasks`|`Array of link:dataobjects.html#TrainTask[TrainTask]`|-
+|[[order]]`@order`|`Number (int)`|-
+|[[orgProperty]]`@orgProperty`|`String`|-
+|[[orgType]]`@orgType`|`String`|-
+|[[physicalLevel]]`@physicalLevel`|`String`|-
+|[[troopCategory]]`@troopCategory`|`String`|-
+|===
+
+[[OrgMultipleCourseScoreRule]]
+== OrgMultipleCourseScoreRule
+
+++++
+ 单位多课目训练成绩评定规则
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[conditions]]`@conditions`|`Array of link:dataobjects.html#Condition[Condition]`|-
+|[[id]]`@id`|`String`|-
+|[[score]]`@score`|`Number (int)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[OrgProperty]]
+== OrgProperty
+
+++++
+ 武警部队单位属性，比如执勤、机动、工兵等
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[optionalMajors]]`@optionalMajors`|`Array of String`|-
+|[[order]]`@order`|`Number (int)`|-
+|===
+
+[[OrgScoreRequirement]]
+== OrgScoreRequirement
+
+++++
+ 八落实单位训练质量要求
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[orgCategory]]`@orgCategory`|`String`|-
+|[[scoreReq]]`@scoreReq`|`Number (int)`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[OrgSingleCourseScoreRule]]
+== OrgSingleCourseScoreRule
+
+++++
+ 单位单课目训练成绩评定规则
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[conditions]]`@conditions`|`Array of link:dataobjects.html#Condition[Condition]`|-
+|[[id]]`@id`|`String`|-
+|[[score]]`@score`|`Number (int)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[OrgSportScoreStandard]]
+== OrgSportScoreStandard
+
+++++
+ 单位体育成绩评定标准
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[conditions]]`@conditions`|`Array of link:dataobjects.html#Condition[Condition]`|-
+|[[id]]`@id`|`String`|-
+|[[masterScore]]`@masterScore`|`Number (int)`|-
+|[[newRecruit]]`@newRecruit`|`Boolean`|-
+|[[score]]`@score`|`Number (int)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[Organization]]
+== Organization
+
+++++
+ Organization data object
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[address]]`@address`|`String`|-
+|[[altitude]]`@altitude`|`Number (Double)`|-
+|[[childCount]]`@childCount`|`Number (int)`|-
+|[[createdTime]]`@createdTime`|`Number (Long)`|-
+|[[deactivated]]`@deactivated`|`Boolean`|-
+|[[deactivatedAt]]`@deactivatedAt`|`Number (Long)`|-
+|[[displayName]]`@displayName`|`String`|-
+|[[id]]`@id`|`String`|-
+|[[important]]`@important`|`Boolean`|-
+|[[latitude]]`@latitude`|`Number (Double)`|-
+|[[longitude]]`@longitude`|`Number (Double)`|-
+|[[name]]`@name`|`String`|-
+|[[nodeCode]]`@nodeCode`|`Number (int)`|-
+|[[orgCategory]]`@orgCategory`|`String`|-
+|[[orgCode]]`@orgCode`|`String`|-
+|[[orgMajors]]`@orgMajors`|`Array of String`|-
+|[[orgProperty]]`@orgProperty`|`String`|-
+|[[orgSequence]]`@orgSequence`|`Number (int)`|-
+|[[orgType]]`@orgType`|`String`|-
+|[[parentId]]`@parentId`|`String`|-
+|[[parentIds]]`@parentIds`|`Array of String`|-
+|[[planSodierCount]]`@planSodierCount`|`Number (int)`|-
+|[[serviceType]]`@serviceType`|`String`|-
+|[[specialMission]]`@specialMission`|`String`|-
+|[[updatedTime]]`@updatedTime`|`Number (Long)`|-
+|===
+
+[[PBFStandard]]
+== PBFStandard
+
+++++
+ 体脂合格标准
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[ageFrom]]`@ageFrom`|`Number (int)`|-
+|[[ageTo]]`@ageTo`|`Number (int)`|-
+|[[gender]]`@gender`|`String`|-
+|[[id]]`@id`|`String`|-
+|[[pbfFrom]]`@pbfFrom`|`Number (Double)`|-
+|[[pbfTo]]`@pbfTo`|`Number (Double)`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[PersonAnnualScoreRule]]
+== PersonAnnualScoreRule
+
+++++
+ 个人年度训练成绩评定标准
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[conditions]]`@conditions`|`Array of link:dataobjects.html#Condition[Condition]`|-
+|[[id]]`@id`|`String`|-
+|[[score]]`@score`|`Number (int)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[PersonRequirement]]
+== PersonRequirement
+
+++++
+ 八落实人员参训率要求
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[orgCategory]]`@orgCategory`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[trainRate]]`@trainRate`|`Number (int)`|-
+|===
+
+[[PersonScoreRequirement]]
+== PersonScoreRequirement
+
+++++
+ 八落实人员训练质量要求
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[endYear]]`@endYear`|`Number (int)`|-
+|[[id]]`@id`|`String`|-
+|[[personProperty]]`@personProperty`|`String`|-
+|[[ranks]]`@ranks`|`Array of String`|-
+|[[scoreReq]]`@scoreReq`|`Number (int)`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[startYear]]`@startYear`|`Number (int)`|-
+|===
+
+[[PersonSportScoreStandard]]
+== PersonSportScoreStandard
+
+++++
+ 个人军事体育训练成绩评定标准
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[evaluatedScore]]`@evaluatedScore`|`Number (int)`|-
+|[[id]]`@id`|`String`|-
+|[[physicalLevel]]`@physicalLevel`|`String`|-
+|[[scoreCondtion]]`@scoreCondtion`|`Number (int)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[totalEnabled]]`@totalEnabled`|`Boolean`|-
+|===
+
+[[PlaceRequirement]]
+== PlaceRequirement
+
+++++
+ 八落实训练场地要求
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[optionalPlaces]]`@optionalPlaces`|`Array of String`|-
+|[[orgCategory]]`@orgCategory`|`String`|-
+|[[requiredPlaces]]`@requiredPlaces`|`Array of String`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[PlaceType]]
+== PlaceType
+
+++++
+ 武警部队训练场地类型
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|===
+
+[[Position]]
+== Position
+
+++++
+ 武警部队职务列表
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[commander]]`@commander`|`Boolean`|-
+|[[id]]`@id`|`String`|-
+|[[master]]`@master`|`Boolean`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|[[orgCategory]]`@orgCategory`|`String`|-
+|[[orgSequence]]`@orgSequence`|`Number (int)`|-
+|===
+
+[[Range]]
+== Range
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[from]]`@from`|`Number (int)`|-
+|[[to]]`@to`|`Number (int)`|-
+|===
+
+[[RequiredSportCourse]]
+== RequiredSportCourse
+
+++++
+ 体育通用训练课目考核要求表
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[ageEnabled]]`@ageEnabled`|`Boolean`|-
+|[[civilServant]]`@civilServant`|`Boolean`|-
+|[[courseId]]`@courseId`|`String`|-
+|[[fromAge]]`@fromAge`|`Number (int)`|-
+|[[genders]]`@genders`|`Array of String`|-
+|[[id]]`@id`|`String`|-
+|[[physicalLevels]]`@physicalLevels`|`Array of String`|-
+|[[required]]`@required`|`Boolean`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[toAge]]`@toAge`|`Number (int)`|-
+|[[troopCategories]]`@troopCategories`|`Array of String`|-
+|===
+
+[[RetrainRule]]
+== RetrainRule
+
+++++
+ 复训课目规则
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[courseId]]`@courseId`|`String`|-
+|[[hours]]`@hours`|`Number (int)`|-
+|[[id]]`@id`|`String`|-
+|[[orgCategories]]`@orgCategories`|`Array of String`|-
+|[[sectionId]]`@sectionId`|`String`|-
+|[[sequence]]`@sequence`|`Number (int)`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[weight]]`@weight`|`Number (int)`|-
+|===
+
+[[ScorePair]]
+== ScorePair
+
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[count]]`@count`|`Number (Double)`|-
+|[[score]]`@score`|`Number (Double)`|-
+|===
+
+[[Soldier]]
+== Soldier
+
+++++
+ Soldier data object
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[advanced]]`@advanced`|`link:dataobjects.html#AdvancedPersonInfo[AdvancedPersonInfo]`|-
+|[[birthday]]`@birthday`|`Number (Long)`|-
+|[[cardId]]`@cardId`|`String`|-
+|[[civilServant]]`@civilServant`|`Boolean`|-
+|[[createdTime]]`@createdTime`|`Number (Long)`|-
+|[[dischargedAt]]`@dischargedAt`|`Number (Long)`|-
+|[[enlistedAt]]`@enlistedAt`|`Number (Long)`|-
+|[[gender]]`@gender`|`String`|-
+|[[gunnerType]]`@gunnerType`|`String`|-
+|[[headUrl]]`@headUrl`|`String`|-
+|[[height]]`@height`|`Number (Double)`|-
+|[[id]]`@id`|`String`|-
+|[[inserviceStatus]]`@inserviceStatus`|`Number (int)`|-
+|[[joinedAt]]`@joinedAt`|`Number (Long)`|-
+|[[leftAt]]`@leftAt`|`Number (Long)`|-
+|[[majorType]]`@majorType`|`Array of String`|-
+|[[name]]`@name`|`String`|-
+|[[organizationId]]`@organizationId`|`String`|-
+|[[personProperty]]`@personProperty`|`String`|-
+|[[physicalLevel]]`@physicalLevel`|`String`|-
+|[[politicalStatus]]`@politicalStatus`|`String`|-
+|[[positionAt]]`@positionAt`|`Number (Long)`|-
+|[[positionId]]`@positionId`|`String`|-
+|[[rankId]]`@rankId`|`String`|-
+|[[soldierCategory]]`@soldierCategory`|`String`|-
+|[[specialForce]]`@specialForce`|`Boolean`|-
+|[[specialForceType]]`@specialForceType`|`String`|-
+|[[supporter]]`@supporter`|`Boolean`|-
+|[[troopCategory]]`@troopCategory`|`String`|-
+|[[updatedTime]]`@updatedTime`|`Number (Long)`|-
+|[[weight]]`@weight`|`Number (Double)`|-
+|===
+
+[[SoldierArchive]]
+== SoldierArchive
+
+++++
+ SoldierArchive data object
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[action]]`@action`|`String`|-
+|[[cardId]]`@cardId`|`String`|-
+|[[createdTime]]`@createdTime`|`Number (Long)`|-
+|[[description]]`@description`|`String`|-
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[organizationId]]`@organizationId`|`String`|-
+|[[position]]`@position`|`String`|-
+|[[positionId]]`@positionId`|`String`|-
+|[[rank]]`@rank`|`String`|-
+|[[rankId]]`@rankId`|`String`|-
+|===
+
+[[SpecialMission]]
+== SpecialMission
+
+++++
+ 特殊部队类型
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|===
+
+[[SportCategory]]
+== SportCategory
+
+++++
+ 体育课目分类
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|===
+
+[[SportScoreStandard]]
+== SportScoreStandard
+
+++++
+ 个人军事体育训练成绩评定标准
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[civilServant]]`@civilServant`|`Boolean`|-
+|[[courseId]]`@courseId`|`String`|-
+|[[gender]]`@gender`|`String`|-
+|[[groups]]`@groups`|`Array of link:dataobjects.html#ScorePair[ScorePair]`|-
+|[[heightFactorCountStep]]`@heightFactorCountStep`|`Number (Double)`|-
+|[[heightFactorStep]]`@heightFactorStep`|`Number (Double)`|-
+|[[heightFrom]]`@heightFrom`|`Number (int)`|-
+|[[heightTo]]`@heightTo`|`Number (int)`|-
+|[[highScoreCountStep]]`@highScoreCountStep`|`Number (Double)`|-
+|[[highScoreScoreStep]]`@highScoreScoreStep`|`Number (Double)`|-
+|[[highland]]`@highland`|`Boolean`|-
+|[[id]]`@id`|`String`|-
+|[[individualEnabled]]`@individualEnabled`|`Boolean`|-
+|[[individuals]]`@individuals`|`Array of link:dataobjects.html#Condition[Condition]`|-
+|[[physicalLevels]]`@physicalLevels`|`Array of String`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[troopCategories]]`@troopCategories`|`Array of String`|-
+|===
+
+[[SportTime]]
+== SportTime
+
+++++
+ 体育课目训练时间参考表
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[hours]]`@hours`|`Number (int)`|-
+|[[id]]`@id`|`String`|-
+|[[physicalLevel]]`@physicalLevel`|`String`|-
+|[[sportCategory]]`@sportCategory`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[StageTime]]
+== StageTime
+
+++++
+ 一个训练阶段时长定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[months]]`@months`|`Number (Double)`|-
+|[[task]]`@task`|`String`|-
+|===
+
+[[SubCourseL1]]
+== SubCourseL1
+
+++++
+ 一级子课目定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[name]]`@name`|`String`|-
+|[[require]]`@require`|`String`|-
+|[[seq]]`@seq`|`Number (int)`|-
+|[[subcourses]]`@subcourses`|`Array of link:dataobjects.html#SubCourseL2[SubCourseL2]`|-
+|===
+
+[[SubCourseL2]]
+== SubCourseL2
+
+++++
+ 二级子课目定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[name]]`@name`|`String`|-
+|[[require]]`@require`|`String`|-
+|[[seq]]`@seq`|`Number (int)`|-
+|===
+
+[[SupporterMajor]]
+== SupporterMajor
+
+++++
+ 后勤保障人员专业类型
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|===
+
+[[TestContent]]
+== TestContent
+
+++++
+ 考核内容定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[name]]`@name`|`String`|-
+|[[testReq]]`@testReq`|`String`|-
+|===
+
+[[TimeRequirement]]
+== TimeRequirement
+
+++++
+ 八落实训练时间要求
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[days]]`@days`|`Number (Double)`|-
+|[[daysPerMonth]]`@daysPerMonth`|`Number (Double)`|-
+|[[daysPerWeek]]`@daysPerWeek`|`Number (Double)`|-
+|[[flexibleDays]]`@flexibleDays`|`Number (Double)`|-
+|[[hours]]`@hours`|`Number (Double)`|-
+|[[hoursAtNight]]`@hoursAtNight`|`Number (Double)`|-
+|[[hoursPerDay]]`@hoursPerDay`|`Number (Double)`|-
+|[[id]]`@id`|`String`|-
+|[[months]]`@months`|`Number (Double)`|-
+|[[orgCategory]]`@orgCategory`|`String`|-
+|[[personProperty]]`@personProperty`|`String`|-
+|[[rateAtNight]]`@rateAtNight`|`Number (Double)`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[TrainPlace]]
+== TrainPlace
+
+++++
+ 训练场地表定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[address]]`@address`|`String`|-
+|[[area]]`@area`|`String`|-
+|[[builtAt]]`@builtAt`|`Number (Long)`|-
+|[[builtStatus]]`@builtStatus`|`Number (int)`|-
+|[[capacity]]`@capacity`|`Number (int)`|-
+|[[createdTime]]`@createdTime`|`Number (Long)`|-
+|[[id]]`@id`|`String`|-
+|[[indoor]]`@indoor`|`Boolean`|-
+|[[internal]]`@internal`|`Boolean`|-
+|[[name]]`@name`|`String`|-
+|[[organizationId]]`@organizationId`|`String`|-
+|[[photos]]`@photos`|`Array of String`|-
+|[[placeTypes]]`@placeTypes`|`Array of String`|-
+|[[startedAt]]`@startedAt`|`Number (Long)`|-
+|[[updatedTime]]`@updatedTime`|`Number (Long)`|-
+|[[weathers]]`@weathers`|`Array of String`|-
+|===
+
+[[TrainSection]]
+== TrainSection
+
+++++
+ 训练大纲标准分册
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[code]]`@code`|`String`|-
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[orgCategories]]`@orgCategories`|`Array of String`|-
+|[[orgTypes]]`@orgTypes`|`Array of String`|-
+|[[personProperties]]`@personProperties`|`Array of String`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[TrainStageTime]]
+== TrainStageTime
+
+++++
+ 训练阶段时长定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[majors]]`@majors`|`Array of String`|-
+|[[orgCategories]]`@orgCategories`|`Array of String`|-
+|[[stageTimes]]`@stageTimes`|`Array of link:dataobjects.html#StageTime[StageTime]`|-
+|[[standardId]]`@standardId`|`String`|-
+|===
+
+[[TrainStandard]]
+== TrainStandard
+
+++++
+ 训练大纲标准
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[endTime]]`@endTime`|`Number (Long)`|-
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[startTime]]`@startTime`|`Number (Long)`|-
+|[[state]]`@state`|`Number (int)`|-
+|[[version]]`@version`|`String`|-
+|===
+
+[[TrainStep]]
+== TrainStep
+
+++++
+ 武警军事训练步骤
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|[[orgType]]`@orgType`|`String`|-
+|[[priority]]`@priority`|`Number (int)`|-
+|[[trainUnits]]`@trainUnits`|`Array of Number (Integer)`|-
+|===
+
+[[TrainTask]]
+== TrainTask
+
+++++
+ 武警部队军事训练任务与课题，比如执勤/处突/抢险救援等
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[name]]`@name`|`String`|-
+|[[optionalSubjects]]`@optionalSubjects`|`Array of String`|-
+|===
+
+[[Trainer]]
+== Trainer
+
+++++
+ 教练员表定义
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[assistCourseIds]]`@assistCourseIds`|`Array of String`|-
+|[[availableCourseIds]]`@availableCourseIds`|`Array of String`|-
+|[[createdTime]]`@createdTime`|`Number (Long)`|-
+|[[id]]`@id`|`String`|-
+|[[level]]`@level`|`String`|-
+|[[organizationId]]`@organizationId`|`String`|-
+|[[soldierId]]`@soldierId`|`String`|-
+|[[startedAt]]`@startedAt`|`Number (Long)`|-
+|[[updatedTime]]`@updatedTime`|`Number (Long)`|-
+|===
+
+[[TrainerLevel]]
+== TrainerLevel
+
+++++
+ 教练员评定等级
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|[[scoreReq]]`@scoreReq`|`Number (int)`|-
+|===
+
+[[TroopAnnualScoreRule]]
+== TroopAnnualScoreRule
+
+++++
+ 部队年度训练成绩评定标准
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[conditions]]`@conditions`|`Array of link:dataobjects.html#Condition[Condition]`|-
+|[[id]]`@id`|`String`|-
+|[[score]]`@score`|`Number (int)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[withTactics]]`@withTactics`|`Boolean`|-
+|===
+
+[[UnitForceAnnualScoreRule]]
+== UnitForceAnnualScoreRule
+
+++++
+ 分队年度训练成绩评定标准
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[conditions]]`@conditions`|`Array of link:dataobjects.html#Condition[Condition]`|-
+|[[id]]`@id`|`String`|-
+|[[score]]`@score`|`Number (int)`|-
+|[[scoreCriteria]]`@scoreCriteria`|`String`|-
+|[[standardId]]`@standardId`|`String`|-
+|[[withTactics]]`@withTactics`|`Boolean`|-
+|===
+
+[[WeatherType]]
+== WeatherType
+
+++++
+ 天气类型
+++++
+'''
+
+[cols=">25%,25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[id]]`@id`|`String`|-
+|[[name]]`@name`|`String`|-
+|[[order]]`@order`|`Number (int)`|-
+|===
+
